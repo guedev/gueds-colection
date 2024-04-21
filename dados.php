@@ -2,6 +2,7 @@
 
 $arrayJogos = [
     [
+        "id_jogo" => 1,
         "nome" => "Taco Gato Cabra Queijo Pizza",
         "numJogadores" => "3 a 4",
         "lancamento" => 2010,
@@ -9,6 +10,7 @@ $arrayJogos = [
         "urlImage" => "images/tacogato.png",
     ],
     [
+        "id_jogo" => 2,
         "nome" => "Jogo2",
         "numJogadores" => "2 a 6",
         "lancamento" => 2015,
@@ -18,6 +20,7 @@ $arrayJogos = [
     ],
 
     [
+        "id_jogo" => 3,
         "nome" => "Jogo2",
         "numJogadores" => "2 a 6",
         "lancamento" => 2015,
@@ -27,6 +30,7 @@ $arrayJogos = [
     ],
 
     [
+        "id_jogo" => 4,
         "nome" => "Jogo2",
         "numJogadores" => "2 a 6",
         "lancamento" => 2015,
