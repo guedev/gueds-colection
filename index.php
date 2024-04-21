@@ -49,6 +49,7 @@ include_once 'dados.php';
                         </div>
                         <div class="card-body">
                             <p class="card-text">Ano de Lançamento: <?= $jogo["lancamento"]; ?> </p>
+                            <p class="card-text">Editora: <?= $jogo["editora"]; ?> </p>
                             <p class="card-text">Nº de Jogadores: <?= $jogo["numJogadores"]; ?> </p>
                             <p class="card-text desc-jogo"><?= $jogo["descricao"]; ?>t.</p>
                             
@@ -75,7 +76,8 @@ include_once 'dados.php';
                 </div>
                 <div class="modal-body">
                     <h6 id="modalNome"></h6>
-                    <p id="modalnumJoga"></p>
+                    <p class="rounded" id="modalnumJoga" style="background-color: #b3cde0; padding: 0 8px; width: fit-content"></p>
+                    <p id="modalEditora"></p>
                     <p id="modalDescricao"></p>
                 </div>
                 <div class="modal-footer">
@@ -102,6 +104,7 @@ include_once 'dados.php';
 
         // Atualizar o conteúdo do modal com os detalhes do jogo
         document.getElementById('modalNome').textContent = jogo.nome;
+        document.getElementById('modalEditora').textContent = "Editora: " + jogo.editora;
         document.getElementById('modalnumJoga').textContent = jogo.numJogadores + " Jogadores";
         document.getElementById('modalDescricao').textContent = jogo.descricao;
 
